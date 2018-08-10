@@ -26,6 +26,14 @@ namespace AdwancedSaveSystem.SaveSystem
             istance = this;
         }
 
+        public ASSCore(Stream stream, ASSDictonary<string, object> saveDictonary)
+        {
+            istance = this;
+
+            this.stream = stream;
+            SaveDictonary = saveDictonary;
+        }
+
         public void Serialize(FileStream stream,TypeOfSerializaton typeOfSerializaton,ASSDictonary<string,object> toSave)
         {
             using (stream)
