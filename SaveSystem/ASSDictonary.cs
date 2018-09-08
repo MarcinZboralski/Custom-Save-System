@@ -39,6 +39,7 @@ namespace AdwancedSaveSystem.SaveSystem
 
         public ASSDictonary()
         {
+
         }
 
         public ASSDictonary(ASSDictonary<T,T1> dictonary)
